@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Login page</title>
+    </head>
+    <body>
+        <center>
+        <form name="login" method="get">
+            <h1>LOGIN PAGE</h1>
+            <table>
+                <tr>
+                    <td>username</td>
+                    <td><input type="text" name="username"></td>
+                </tr>
+                <tr>
+                    <td>password</td>
+                    <td><input type="password" name="password"></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td><input type="submit" value="login"></td>
+                </tr>
+            </table>
+            <% if @st == true %>
+                Authenticate
+            <% else %>
+                Unauthenticate
+            <% end %>
+            <%= @st %>
+        
+        </form>
+        </center>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>register page</title>
+    </head>
+    
+    <body>
+        <center>
+        <form name="register" method="get">
+            <h1> REGISTER</h1>
+            <table>
+                <tr>
+                    <td>username</td>
+                    <td><input type="text" name="username"></td>
+                </tr>
+                <tr>
+                    <td>password</td>
+                    <td><input type="password" name="password"></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td><input type="submit" value="register"></td>
+                </tr>
+            </table>
+            <% @b.errors.full_messages.each do |e| %>
+                <%= e %>
+                </br>
+            <% end %>
+        </form>
+        </center>
+    </body>
+</html>
